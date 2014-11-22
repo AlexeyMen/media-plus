@@ -24,6 +24,7 @@ requirejs.config({
     pages:         {deps: ['jquery', 'css']},
     media:         {deps: ['pages', 'audio', 'conditioners', 'cameras']},
     audio:         {deps: ['gauge']},
+    gauge:         {deps: ['jquery']},
   }
 })
 
