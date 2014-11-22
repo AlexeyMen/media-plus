@@ -10,8 +10,11 @@ $cr-audio-button
 	background red
 	cursor pointer
 
-audio-button(x, y)
+audio-button-yx(y, x)
 	@extends $cr-audio-button
 	left (x)px
 	bottom (600 - y - buttH)px
+
+audio-button(x, y)
+	audio-button-yx(y, x)
 
