@@ -23,8 +23,8 @@
   cursor: pointer;
 }
 .cr-audio-button-power {
-  left: 56px;
-  bottom: 470px;
+  left: 372px;
+  bottom: 453px;
 }
 .cr-audio-button-play {
   left: 436px;
@@ -59,15 +59,15 @@
   bottom: 244px;
 }
 .cr-audio-button-mute {
-  left: 189px;
+  left: 157px;
   bottom: 238px;
 }
 .cr-audio-button-volumeup {
-  left: 112px;
+  left: 80px;
   bottom: 295px;
 }
 .cr-audio-button-volumedown {
-  left: 112px;
+  left: 80px;
   bottom: 180px;
 }
 .cr-audio-button-forward {
