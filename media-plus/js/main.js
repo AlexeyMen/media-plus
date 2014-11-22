@@ -38,7 +38,7 @@ function setClick(link, s, center){
 	  case 'cameras':
 	  case 'audio':
 		  $(link).click(function(){
-		    $(center).css('background-image', 'url("../media-plus/img/bg-' + s + '.png")')
+		    $(center).css('background-image', 'url("media-plus/img/bg-' + s + '.png")')
 		  })
 		  break
   }
