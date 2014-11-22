@@ -1,13 +1,7 @@
-var crPages = {
-  'media-center': {},
-  'conditioners': {},
-  'television':   {},
-  'cameras':      {},
-}
-
 define(function(){
   requireCss('media-plus/css/media-space.css')	
-  crPages['media-center'].prepareWidgets = function(page){
+  var crPages = require('pages')	
+  crPages['media-plus'].prepareWidgets = function(page){
 	  var pageContent = $(page).find('[data-role=cr-page-content]').addClass('cr-media-space')[0]
 	  var mediaLeft   = $('<div class="cr-media-left"/>').appendTo(pageContent)
 	  var mediaCenter = $('<div class="cr-media-center"/>').appendTo(pageContent)
@@ -16,12 +10,8 @@ define(function(){
 	  var rightArray  = ['cameras', 'webcams', 'conditioners', 'curtains', 'garlands']
 	  setButtons(leftArray, mediaLeft, mediaCenter)
 	  setButtons(rightArray, mediaRight, mediaCenter)
+	  if(!crPages['geo'])$(page).find('[data-role=header], [data-role=panel]').remove()
   }	
-  require('pages')(crPages)	
-  var spinner = require('spin')
-  spinner.stop()
-  var spinTarget = document.getElementById('cr-spinner');
-  spinTarget.parentNode.removeChild(spinTarget)
   require(['mobile'])	
 })
 
