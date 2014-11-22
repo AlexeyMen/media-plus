@@ -1,0 +1,88 @@
+.cr-audio-button-power,
+.cr-audio-button-play,
+.cr-audio-button-pause,
+.cr-audio-button-stop,
+.cr-audio-button-ok,
+.cr-audio-button-up,
+.cr-audio-button-down,
+.cr-audio-button-right,
+.cr-audio-button-left,
+.cr-audio-button-mute,
+.cr-audio-button-volumeup,
+.cr-audio-button-volumedown,
+.cr-audio-button-forward,
+.cr-audio-button-previous,
+.cr-audio-button-back,
+.cr-audio-button-next {
+  position: absolute;
+  content: "\00A0";
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  background: #f00;
+  cursor: pointer;
+}
+.cr-audio-button-power {
+  left: 30px;
+  bottom: 531px;
+}
+.cr-audio-button-play {
+  left: 47px;
+  bottom: 151px;
+}
+.cr-audio-button-pause {
+  left: 47px;
+  bottom: 87px;
+}
+.cr-audio-button-stop {
+  left: 47px;
+  bottom: 24px;
+}
+.cr-audio-button-ok {
+  left: 256px;
+  bottom: 84px;
+}
+.cr-audio-button-up {
+  left: 198px;
+  bottom: 84px;
+}
+.cr-audio-button-down {
+  left: 312px;
+  bottom: 84px;
+}
+.cr-audio-button-right {
+  left: 256px;
+  bottom: 24px;
+}
+.cr-audio-button-left {
+  left: 256px;
+  bottom: 149px;
+}
+.cr-audio-button-mute {
+  left: 262px;
+  bottom: 398px;
+}
+.cr-audio-button-volumeup {
+  left: 205px;
+  bottom: 475px;
+}
+.cr-audio-button-volumedown {
+  left: 320px;
+  bottom: 475px;
+}
+.cr-audio-button-forward {
+  left: 117px;
+  bottom: 21px;
+}
+.cr-audio-button-previous {
+  left: 117px;
+  bottom: 215px;
+}
+.cr-audio-button-back {
+  left: 117px;
+  bottom: 153px;
+}
+.cr-audio-button-next {
+  left: 117px;
+  bottom: 83px;
+}

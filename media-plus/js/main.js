@@ -6,7 +6,7 @@ var crPages = {
 }
 
 define(function(){
-  requireCss('media-plus/css/cr-media.css')	
+  requireCss('media-plus/css/media-space.css')	
   crPages['media-center'].prepareWidgets = function(page){
 	  var pageContent = $(page).find('[data-role=cr-page-content]').addClass('cr-media-space')[0]
 	  var mediaLeft   = $('<div class="cr-media-left"/>').appendTo(pageContent)
@@ -36,9 +36,17 @@ function setClick(link, s, center){
   switch(s){	
 	  case 'conditioners':
 	  case 'cameras':
-	  case 'audio':
 		  $(link).click(function(){
 		    $(center).css('background-image', 'url("media-plus/img/bg-' + s + '.png")')
+		  })
+		  break
+	  case 'audio':
+		  $(link).click(function(){
+		    $(center).css('background-image', 'none')
+			requireCss('media-plus/css/audio-player.css')  
+			$(center).load('media-center/audio.html', function(){
+			  alert('audio')
+			})  
 		  })
 		  break
   }
