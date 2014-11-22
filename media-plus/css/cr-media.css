@@ -1,0 +1,140 @@
+.cr-icones-projector,
+.cr-icones-projector:hover,
+.cr-icones-tv,
+.cr-icones-tv:hover,
+.cr-icones-ir,
+.cr-icones-ir:hover,
+.cr-icones-audio,
+.cr-icones-audio:hover,
+.cr-icones-dvd,
+.cr-icones-dvd:hover,
+.cr-icones-cameras,
+.cr-icones-cameras:hover,
+.cr-icones-webcams,
+.cr-icones-webcams:hover,
+.cr-icones-curtains,
+.cr-icones-curtains:hover,
+.cr-icones-conditioners,
+.cr-icones-conditioners:hover,
+.cr-icones-garlands,
+.cr-icones-garlands:hover,
+.cr-icones-my-audio,
+.cr-icones-my-audio:hover,
+.cr-icones-my-video,
+.cr-icones-my-video:hover {
+  content: "\00A0";
+  width: 128px;
+  height: 109px;
+  margin: 0;
+  background-image: url("../img/large-buttons.png");
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+}
+.cr-icones-projector {
+  background-position: 0px 0px;
+}
+.cr-icones-projector:hover {
+  background-position: -128px 0px;
+}
+.cr-icones-tv {
+  background-position: 0px -109px;
+}
+.cr-icones-tv:hover {
+  background-position: -128px -109px;
+}
+.cr-icones-ir {
+  background-position: 0px -218px;
+}
+.cr-icones-ir:hover {
+  background-position: -128px -218px;
+}
+.cr-icones-audio {
+  background-position: 0px -327px;
+}
+.cr-icones-audio:hover {
+  background-position: -128px -327px;
+}
+.cr-icones-dvd {
+  background-position: 0px -436px;
+}
+.cr-icones-dvd:hover {
+  background-position: -128px -436px;
+}
+.cr-icones-cameras {
+  background-position: 0px -545px;
+}
+.cr-icones-cameras:hover {
+  background-position: -128px -545px;
+}
+.cr-icones-webcams {
+  background-position: 0px -654px;
+}
+.cr-icones-webcams:hover {
+  background-position: -128px -654px;
+}
+.cr-icones-curtains {
+  background-position: 0px -763px;
+}
+.cr-icones-curtains:hover {
+  background-position: -128px -763px;
+}
+.cr-icones-conditioners {
+  background-position: 0px -872px;
+}
+.cr-icones-conditioners:hover {
+  background-position: -128px -872px;
+}
+.cr-icones-garlands {
+  background-position: 0px -981px;
+}
+.cr-icones-garlands:hover {
+  background-position: -128px -981px;
+}
+.cr-icones-my-audio {
+  background-position: 0px -1090px;
+}
+.cr-icones-my-audio:hover {
+  background-position: -128px -1090px;
+}
+.cr-icones-my-video {
+  background-position: 0px -1199px;
+}
+.cr-icones-my-video:hover {
+  background-position: -128px -1199px;
+}
+.cr-media-left,
+.cr-media-right {
+  position: absolute;
+  width: 128px;
+  height: 545px;
+  top: 0;
+}
+.cr-media-left {
+  left: 0;
+}
+.cr-media-right {
+  right: 0;
+}
+.cr-media-center {
+  width: 1024px;
+  height: 100%;
+  left: 128px;
+  top: 0;
+  position: absolute;
+  background-image: url("../img/bg-stub.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.cr-media-space {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1280px;
+  height: 546px;
+  background-color: #3d3d3d;
+  margin: 0;
+  margin-top: -273px;
+  margin-left: -640px;
+  border-padius: 8px;
+}

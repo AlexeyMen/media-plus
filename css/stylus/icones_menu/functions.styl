@@ -1,0 +1,25 @@
+$control-r-icon
+	content "\00A0"
+	width 44px 
+	line-height 44px
+	height 44px 
+	margin-top -22px
+	display inline-block 
+	margin-right 8px
+	background-position 44px 0px
+	background-image: url('../img/icones/all-icones.png')
+
+icon-pos(x, y, v)
+	@extends $control-r-icon
+	background-position (-1 * x * 44 - v)px (-1 * y * 44)px
+
+icon-out(x, y)
+	icon-pos(x * 2, y, 0)
+
+icon-hover(x, y)
+	icon-pos(x * 2, y, 44)
+	
+.control-r-icon-props:focus, .control-r-icon-graph:focus
+	-moz-box-shadow: none !important
+	-webkit-box-shadow: none !important
+	box-shadow: none !important

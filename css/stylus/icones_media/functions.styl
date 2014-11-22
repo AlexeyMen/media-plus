@@ -1,0 +1,23 @@
+stepX = 128
+stepY = 109
+
+$cr-icon
+	content "\00A0"
+	width (stepX)px 
+	height (stepY)px 
+	margin 0
+	background-image: url('../media-plus/img/icones.png')
+	cursor: pointer
+	display: inline-block
+	float: left
+
+icon-pos(x, y, v)
+	@extends $cr-icon
+	background-position (-1 * x * stepX - v)px (-1 * y * stepY)px
+
+icon-out(x, y)
+	icon-pos(x * 2, y, 0)
+
+icon-hover(x, y)
+	icon-pos(x * 2, y, stepX)
+	

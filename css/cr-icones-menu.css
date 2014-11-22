@@ -1,0 +1,706 @@
+.control-r-icon-analog-cam a:before,
+.control-r-icon-analog-cam a:hover:before,
+.control-r-icon-gas a:before,
+.control-r-icon-gas a:hover:before,
+.control-r-icon-sun a:before,
+.control-r-icon-sun a:hover:before,
+.control-r-icon-rain a:before,
+.control-r-icon-rain a:hover:before,
+.control-r-icon-therm-hum a:before,
+.control-r-icon-therm-hum a:hover:before,
+.control-r-icon-mot-sensor a:before,
+.control-r-icon-mot-sensor a:hover:before,
+.control-r-icon-glass a:before,
+.control-r-icon-glass a:hover:before,
+.control-r-icon-meteo a:before,
+.control-r-icon-meteo a:hover:before,
+.control-r-icon-ventil a:before,
+.control-r-icon-ventil a:hover:before,
+.control-r-icon-webcam a:before,
+.control-r-icon-webcam a:hover:before,
+.control-r-icon-alarm-button a:before,
+.control-r-icon-alarm-button a:hover:before,
+.control-r-icon-intercom a:before,
+.control-r-icon-intercom a:hover:before,
+.control-r-icon-garage a:before,
+.control-r-icon-garage a:hover:before,
+.control-r-icon-barrier a:before,
+.control-r-icon-barrier a:hover:before,
+.control-r-icon-bell a:before,
+.control-r-icon-bell a:hover:before,
+.control-r-icon-fire a:before,
+.control-r-icon-fire a:hover:before,
+.control-r-icon-window-secur a:before,
+.control-r-icon-window-secur a:hover:before,
+.control-r-icon-door a:before,
+.control-r-icon-door a:hover:before,
+.control-r-icon-dimmer a:before,
+.control-r-icon-dimmer a:hover:before,
+.control-r-icon-dim-jack-scale a:before,
+.control-r-icon-dim-jack-scale a:hover:before,
+.control-r-icon-dim-switch a:before,
+.control-r-icon-dim-switch a:hover:before,
+.control-r-icon-group a:before,
+.control-r-icon-group a:hover:before,
+.control-r-icon-window-energ a:before,
+.control-r-icon-window-energ a:hover:before,
+.control-r-icon-conditioner-energ a:before,
+.control-r-icon-conditioner-energ a:hover:before,
+.control-r-icon-floor-lamp a:before,
+.control-r-icon-floor-lamp a:hover:before,
+.control-r-icon-reading-lamp a:before,
+.control-r-icon-reading-lamp a:hover:before,
+.control-r-icon-sconce a:before,
+.control-r-icon-sconce a:hover:before,
+.control-r-icon-chandelier a:before,
+.control-r-icon-chandelier a:hover:before,
+.control-r-icon-soffit1 a:before,
+.control-r-icon-soffit1 a:hover:before,
+.control-r-icon-soffit2 a:before,
+.control-r-icon-soffit2 a:hover:before,
+.control-r-icon-fan a:before,
+.control-r-icon-fan a:hover:before,
+.control-r-icon-heater a:before,
+.control-r-icon-heater a:hover:before,
+.control-r-icon-ventel-comf a:before,
+.control-r-icon-ventel-comf a:hover:before,
+.control-r-icon-gas-boiler a:before,
+.control-r-icon-gas-boiler a:hover:before,
+.control-r-icon-iron a:before,
+.control-r-icon-iron a:hover:before,
+.control-r-icon-washer a:before,
+.control-r-icon-washer a:hover:before,
+.control-r-icon-sensor-leak a:before,
+.control-r-icon-sensor-leak a:hover:before,
+.control-r-icon-sensor-therm a:before,
+.control-r-icon-sensor-therm a:hover:before,
+.control-r-icon-sensor-therm-hum a:before,
+.control-r-icon-sensor-therm-hum a:hover:before,
+.control-r-icon-jack a:before,
+.control-r-icon-jack a:hover:before,
+.control-r-icon-streetlight a:before,
+.control-r-icon-streetlight a:hover:before,
+.control-r-icon-bulb a:before,
+.control-r-icon-bulb a:hover:before,
+.control-r-icon-comp-tv-tuner a:before,
+.control-r-icon-comp-tv-tuner a:hover:before,
+.control-r-icon-dvd-player a:before,
+.control-r-icon-dvd-player a:hover:before,
+.control-r-icon-media-center a:before,
+.control-r-icon-media-center a:hover:before,
+.control-r-icon-curtains a:before,
+.control-r-icon-curtains a:hover:before,
+.control-r-icon-blinds a:before,
+.control-r-icon-blinds a:hover:before,
+.control-r-icon-watering a:before,
+.control-r-icon-watering a:hover:before,
+.control-r-icon-conditioner-comf a:before,
+.control-r-icon-conditioner-comf a:hover:before,
+.control-r-icon-projector a:before,
+.control-r-icon-projector a:hover:before,
+.control-r-icon-remote-control a:before,
+.control-r-icon-remote-control a:hover:before,
+.control-r-icon-garland a:before,
+.control-r-icon-garland a:hover:before,
+.control-r-icon-speakers a:before,
+.control-r-icon-speakers a:hover:before,
+.control-r-icon-monitor a:before,
+.control-r-icon-monitor a:hover:before,
+.control-r-icon-floor1 a:before,
+.control-r-icon-floor1 a:hover:before,
+.control-r-icon-floor2 a:before,
+.control-r-icon-floor2 a:hover:before,
+.control-r-icon-floor3 a:before,
+.control-r-icon-floor3 a:hover:before,
+.control-r-icon-floor4 a:before,
+.control-r-icon-floor4 a:hover:before,
+.control-r-icon-floor5 a:before,
+.control-r-icon-floor5 a:hover:before,
+.control-r-icon-floor6 a:before,
+.control-r-icon-floor6 a:hover:before,
+.control-r-icon-floor7 a:before,
+.control-r-icon-floor7 a:hover:before,
+.control-r-icon-floor9 a:before,
+.control-r-icon-floor9 a:hover:before,
+.control-r-icon-floor-1 a:before,
+.control-r-icon-floor-1 a:hover:before,
+.control-r-icon-floor-2 a:before,
+.control-r-icon-floor-2 a:hover:before,
+.control-r-icon-cottage a:before,
+.control-r-icon-cottage a:hover:before,
+.control-r-icon-building a:before,
+.control-r-icon-building a:hover:before,
+.control-r-icon-factory a:before,
+.control-r-icon-factory a:hover:before,
+.control-r-icon-search a:before,
+.control-r-icon-search a:hover:before,
+.control-r-icon-apartments a:before,
+.control-r-icon-apartments a:hover:before,
+.control-r-icon-shop a:before,
+.control-r-icon-shop a:hover:before,
+.control-r-icon-garage-menu a:before,
+.control-r-icon-garage-menu a:hover:before,
+.control-r-icon-mail a:before,
+.control-r-icon-mail a:hover:before,
+.control-r-icon-phone a:before,
+.control-r-icon-phone a:hover:before,
+.control-r-icon-wizard a:before,
+.control-r-icon-wizard a:hover:before,
+.control-r-icon-support a:before,
+.control-r-icon-support a:hover:before,
+.control-r-icon-map-menu a:before,
+.control-r-icon-map-menu a:hover:before,
+.control-r-icon-comfort h3 a:before,
+.control-r-icon-comfort h3 a:hover:before,
+.control-r-icon-security h3 a:before,
+.control-r-icon-security h3 a:hover:before,
+.control-r-icon-energy h3 a:before,
+.control-r-icon-energy h3 a:hover:before,
+.control-r-icon-graph h3 a:before,
+.control-r-icon-graph h3 a:hover:before,
+.control-r-icon-props h3 a:before,
+a.control-r-icon-props:before,
+.control-r-icon-props h3 a:hover:before,
+a.control-r-icon-props:hover:before,
+.control-r-icon-support-collaps h3 a:before,
+.control-r-icon-support-collaps h3 a:hover:before,
+.control-r-icon-home h3 a:before,
+.control-r-icon-home h3 a:hover:before,
+.control-r-icon-user h3 a:before,
+.control-r-icon-user h3 a:hover:before,
+.control-r-icon-map h3 a:before,
+.control-r-icon-map h3 a:hover:before {
+  content: "\00A0";
+  width: 44px;
+  line-height: 44px;
+  height: 44px;
+  margin-top: -22px;
+  display: inline-block;
+  margin-right: 8px;
+  background-position: 44px 0px;
+  background-image: url("../img/icones/all-icones.png");
+}
+.control-r-icon-props:focus,
+.control-r-icon-graph:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.control-r-icon-analog-cam a:before {
+  background-position: 0px 0px;
+}
+.control-r-icon-analog-cam a:hover:before {
+  background-position: -44px 0px;
+}
+.control-r-icon-gas a:before {
+  background-position: 0px -44px;
+}
+.control-r-icon-gas a:hover:before {
+  background-position: -44px -44px;
+}
+.control-r-icon-sun a:before {
+  background-position: 0px -88px;
+}
+.control-r-icon-sun a:hover:before {
+  background-position: -44px -88px;
+}
+.control-r-icon-rain a:before {
+  background-position: 0px -132px;
+}
+.control-r-icon-rain a:hover:before {
+  background-position: -44px -132px;
+}
+.control-r-icon-therm-hum a:before {
+  background-position: 0px -176px;
+}
+.control-r-icon-therm-hum a:hover:before {
+  background-position: -44px -176px;
+}
+.control-r-icon-mot-sensor a:before {
+  background-position: 0px -220px;
+}
+.control-r-icon-mot-sensor a:hover:before {
+  background-position: -44px -220px;
+}
+.control-r-icon-glass a:before {
+  background-position: 0px -264px;
+}
+.control-r-icon-glass a:hover:before {
+  background-position: -44px -264px;
+}
+.control-r-icon-meteo a:before {
+  background-position: 0px -308px;
+}
+.control-r-icon-meteo a:hover:before {
+  background-position: -44px -308px;
+}
+.control-r-icon-ventil a:before {
+  background-position: 0px -352px;
+}
+.control-r-icon-ventil a:hover:before {
+  background-position: -44px -352px;
+}
+.control-r-icon-webcam a:before {
+  background-position: 0px -396px;
+}
+.control-r-icon-webcam a:hover:before {
+  background-position: -44px -396px;
+}
+.control-r-icon-alarm-button a:before {
+  background-position: 0px -440px;
+}
+.control-r-icon-alarm-button a:hover:before {
+  background-position: -44px -440px;
+}
+.control-r-icon-intercom a:before {
+  background-position: 0px -484px;
+}
+.control-r-icon-intercom a:hover:before {
+  background-position: -44px -484px;
+}
+.control-r-icon-garage a:before {
+  background-position: 0px -528px;
+}
+.control-r-icon-garage a:hover:before {
+  background-position: -44px -528px;
+}
+.control-r-icon-barrier a:before {
+  background-position: 0px -572px;
+}
+.control-r-icon-barrier a:hover:before {
+  background-position: -44px -572px;
+}
+.control-r-icon-bell a:before {
+  background-position: 0px -616px;
+}
+.control-r-icon-bell a:hover:before {
+  background-position: -44px -616px;
+}
+.control-r-icon-fire a:before {
+  background-position: 0px -660px;
+}
+.control-r-icon-fire a:hover:before {
+  background-position: -44px -660px;
+}
+.control-r-icon-window-secur a:before {
+  background-position: 0px -704px;
+}
+.control-r-icon-window-secur a:hover:before {
+  background-position: -44px -704px;
+}
+.control-r-icon-door a:before {
+  background-position: 0px -748px;
+}
+.control-r-icon-door a:hover:before {
+  background-position: -44px -748px;
+}
+.control-r-icon-dimmer a:before {
+  background-position: -88px 0px;
+}
+.control-r-icon-dimmer a:hover:before {
+  background-position: -132px 0px;
+}
+.control-r-icon-dim-jack-scale a:before {
+  background-position: -88px -44px;
+}
+.control-r-icon-dim-jack-scale a:hover:before {
+  background-position: -132px -44px;
+}
+.control-r-icon-dim-switch a:before {
+  background-position: -88px -88px;
+}
+.control-r-icon-dim-switch a:hover:before {
+  background-position: -132px -88px;
+}
+.control-r-icon-group a:before {
+  background-position: -88px -132px;
+}
+.control-r-icon-group a:hover:before {
+  background-position: -132px -132px;
+}
+.control-r-icon-window-energ a:before {
+  background-position: -88px -176px;
+}
+.control-r-icon-window-energ a:hover:before {
+  background-position: -132px -176px;
+}
+.control-r-icon-conditioner-energ a:before {
+  background-position: -88px -220px;
+}
+.control-r-icon-conditioner-energ a:hover:before {
+  background-position: -132px -220px;
+}
+.control-r-icon-floor-lamp a:before {
+  background-position: -88px -264px;
+}
+.control-r-icon-floor-lamp a:hover:before {
+  background-position: -132px -264px;
+}
+.control-r-icon-reading-lamp a:before {
+  background-position: -88px -308px;
+}
+.control-r-icon-reading-lamp a:hover:before {
+  background-position: -132px -308px;
+}
+.control-r-icon-sconce a:before {
+  background-position: -88px -352px;
+}
+.control-r-icon-sconce a:hover:before {
+  background-position: -132px -352px;
+}
+.control-r-icon-chandelier a:before {
+  background-position: -88px -396px;
+}
+.control-r-icon-chandelier a:hover:before {
+  background-position: -132px -396px;
+}
+.control-r-icon-soffit1 a:before {
+  background-position: -88px -440px;
+}
+.control-r-icon-soffit1 a:hover:before {
+  background-position: -132px -440px;
+}
+.control-r-icon-soffit2 a:before {
+  background-position: -88px -484px;
+}
+.control-r-icon-soffit2 a:hover:before {
+  background-position: -132px -484px;
+}
+.control-r-icon-fan a:before {
+  background-position: -88px -528px;
+}
+.control-r-icon-fan a:hover:before {
+  background-position: -132px -528px;
+}
+.control-r-icon-heater a:before {
+  background-position: -88px -572px;
+}
+.control-r-icon-heater a:hover:before {
+  background-position: -132px -572px;
+}
+.control-r-icon-ventel-comf a:before {
+  background-position: -88px -616px;
+}
+.control-r-icon-ventel-comf a:hover:before {
+  background-position: -132px -616px;
+}
+.control-r-icon-gas-boiler a:before {
+  background-position: -88px -660px;
+}
+.control-r-icon-gas-boiler a:hover:before {
+  background-position: -132px -660px;
+}
+.control-r-icon-iron a:before {
+  background-position: -88px -704px;
+}
+.control-r-icon-iron a:hover:before {
+  background-position: -132px -704px;
+}
+.control-r-icon-washer a:before {
+  background-position: -88px -748px;
+}
+.control-r-icon-washer a:hover:before {
+  background-position: -132px -748px;
+}
+.control-r-icon-sensor-leak a:before {
+  background-position: -88px -792px;
+}
+.control-r-icon-sensor-leak a:hover:before {
+  background-position: -132px -792px;
+}
+.control-r-icon-sensor-therm a:before {
+  background-position: -88px -836px;
+}
+.control-r-icon-sensor-therm a:hover:before {
+  background-position: -132px -836px;
+}
+.control-r-icon-sensor-therm-hum a:before {
+  background-position: -88px -880px;
+}
+.control-r-icon-sensor-therm-hum a:hover:before {
+  background-position: -132px -880px;
+}
+.control-r-icon-jack a:before {
+  background-position: -88px -924px;
+}
+.control-r-icon-jack a:hover:before {
+  background-position: -132px -924px;
+}
+.control-r-icon-streetlight a:before {
+  background-position: -88px -968px;
+}
+.control-r-icon-streetlight a:hover:before {
+  background-position: -132px -968px;
+}
+.control-r-icon-bulb a:before {
+  background-position: -88px -1012px;
+}
+.control-r-icon-bulb a:hover:before {
+  background-position: -132px -1012px;
+}
+.control-r-icon-comp-tv-tuner a:before {
+  background-position: -176px 0px;
+}
+.control-r-icon-comp-tv-tuner a:hover:before {
+  background-position: -220px 0px;
+}
+.control-r-icon-dvd-player a:before {
+  background-position: -176px -44px;
+}
+.control-r-icon-dvd-player a:hover:before {
+  background-position: -220px -44px;
+}
+.control-r-icon-media-center a:before {
+  background-position: -176px -88px;
+}
+.control-r-icon-media-center a:hover:before {
+  background-position: -220px -88px;
+}
+.control-r-icon-curtains a:before {
+  background-position: -176px -132px;
+}
+.control-r-icon-curtains a:hover:before {
+  background-position: -220px -132px;
+}
+.control-r-icon-blinds a:before {
+  background-position: -176px -176px;
+}
+.control-r-icon-blinds a:hover:before {
+  background-position: -220px -176px;
+}
+.control-r-icon-watering a:before {
+  background-position: -176px -220px;
+}
+.control-r-icon-watering a:hover:before {
+  background-position: -220px -220px;
+}
+.control-r-icon-conditioner-comf a:before {
+  background-position: -176px -264px;
+}
+.control-r-icon-conditioner-comf a:hover:before {
+  background-position: -220px -264px;
+}
+.control-r-icon-projector a:before {
+  background-position: -176px -308px;
+}
+.control-r-icon-projector a:hover:before {
+  background-position: -220px -308px;
+}
+.control-r-icon-remote-control a:before {
+  background-position: -176px -352px;
+}
+.control-r-icon-remote-control a:hover:before {
+  background-position: -220px -352px;
+}
+.control-r-icon-garland a:before {
+  background-position: -176px -396px;
+}
+.control-r-icon-garland a:hover:before {
+  background-position: -220px -396px;
+}
+.control-r-icon-speakers a:before {
+  background-position: -176px -440px;
+}
+.control-r-icon-speakers a:hover:before {
+  background-position: -220px -440px;
+}
+.control-r-icon-monitor a:before {
+  background-position: -176px -484px;
+}
+.control-r-icon-monitor a:hover:before {
+  background-position: -220px -484px;
+}
+.control-r-icon-floor1 a:before {
+  background-position: -264px 0px;
+}
+.control-r-icon-floor1 a:hover:before {
+  background-position: -308px 0px;
+}
+.control-r-icon-floor2 a:before {
+  background-position: -264px -44px;
+}
+.control-r-icon-floor2 a:hover:before {
+  background-position: -308px -44px;
+}
+.control-r-icon-floor3 a:before {
+  background-position: -264px -88px;
+}
+.control-r-icon-floor3 a:hover:before {
+  background-position: -308px -88px;
+}
+.control-r-icon-floor4 a:before {
+  background-position: -264px -132px;
+}
+.control-r-icon-floor4 a:hover:before {
+  background-position: -308px -132px;
+}
+.control-r-icon-floor5 a:before {
+  background-position: -264px -176px;
+}
+.control-r-icon-floor5 a:hover:before {
+  background-position: -308px -176px;
+}
+.control-r-icon-floor6 a:before {
+  background-position: -264px -220px;
+}
+.control-r-icon-floor6 a:hover:before {
+  background-position: -308px -220px;
+}
+.control-r-icon-floor7 a:before {
+  background-position: -264px -264px;
+}
+.control-r-icon-floor7 a:hover:before {
+  background-position: -308px -264px;
+}
+.control-r-icon-floor9 a:before {
+  background-position: -264px -308px;
+}
+.control-r-icon-floor9 a:hover:before {
+  background-position: -308px -308px;
+}
+.control-r-icon-floor-1 a:before {
+  background-position: -264px -352px;
+}
+.control-r-icon-floor-1 a:hover:before {
+  background-position: -308px -352px;
+}
+.control-r-icon-floor-2 a:before {
+  background-position: -264px -396px;
+}
+.control-r-icon-floor-2 a:hover:before {
+  background-position: -308px -396px;
+}
+.control-r-icon-cottage a:before {
+  background-position: -264px -440px;
+}
+.control-r-icon-cottage a:hover:before {
+  background-position: -308px -440px;
+}
+.control-r-icon-building a:before {
+  background-position: -264px -484px;
+}
+.control-r-icon-building a:hover:before {
+  background-position: -308px -484px;
+}
+.control-r-icon-factory a:before {
+  background-position: -264px -528px;
+}
+.control-r-icon-factory a:hover:before {
+  background-position: -308px -528px;
+}
+.control-r-icon-search a:before {
+  background-position: -264px -572px;
+}
+.control-r-icon-search a:hover:before {
+  background-position: -308px -572px;
+}
+.control-r-icon-apartments a:before {
+  background-position: -264px -616px;
+}
+.control-r-icon-apartments a:hover:before {
+  background-position: -308px -616px;
+}
+.control-r-icon-shop a:before {
+  background-position: -264px -660px;
+}
+.control-r-icon-shop a:hover:before {
+  background-position: -308px -660px;
+}
+.control-r-icon-garage-menu a:before {
+  background-position: -264px -704px;
+}
+.control-r-icon-garage-menu a:hover:before {
+  background-position: -308px -704px;
+}
+.control-r-icon-mail a:before {
+  background-position: -264px -748px;
+}
+.control-r-icon-mail a:hover:before {
+  background-position: -308px -748px;
+}
+.control-r-icon-phone a:before {
+  background-position: -264px -792px;
+}
+.control-r-icon-phone a:hover:before {
+  background-position: -308px -792px;
+}
+.control-r-icon-wizard a:before {
+  background-position: -264px -836px;
+}
+.control-r-icon-wizard a:hover:before {
+  background-position: -308px -836px;
+}
+.control-r-icon-support a:before {
+  background-position: -264px -880px;
+}
+.control-r-icon-support a:hover:before {
+  background-position: -308px -880px;
+}
+.control-r-icon-map-menu a:before {
+  background-position: -264px -924px;
+}
+.control-r-icon-map-menu a:hover:before {
+  background-position: -308px -924px;
+}
+.control-r-icon-comfort h3 a:before {
+  background-position: -352px 0px;
+}
+.control-r-icon-comfort h3 a:hover:before {
+  background-position: -396px 0px;
+}
+.control-r-icon-security h3 a:before {
+  background-position: -352px -44px;
+}
+.control-r-icon-security h3 a:hover:before {
+  background-position: -396px -44px;
+}
+.control-r-icon-energy h3 a:before {
+  background-position: -352px -88px;
+}
+.control-r-icon-energy h3 a:hover:before {
+  background-position: -396px -88px;
+}
+.control-r-icon-graph h3 a:before {
+  background-position: -352px -132px;
+}
+.control-r-icon-graph h3 a:hover:before {
+  background-position: -396px -132px;
+}
+.control-r-icon-props h3 a:before {
+  background-position: -352px -176px;
+}
+a.control-r-icon-props:before {
+  background-position: -352px -176px;
+  background-color: #1d1d1d;
+}
+.control-r-icon-props h3 a:hover:before {
+  background-position: -396px -176px;
+}
+a.control-r-icon-props:hover:before {
+  background-position: -396px -176px;
+  background-color: #1d1d1d;
+}
+.control-r-icon-support-collaps h3 a:before {
+  background-position: -352px -220px;
+}
+.control-r-icon-support-collaps h3 a:hover:before {
+  background-position: -396px -220px;
+}
+.control-r-icon-home h3 a:before {
+  background-position: -352px -264px;
+}
+.control-r-icon-home h3 a:hover:before {
+  background-position: -396px -264px;
+}
+.control-r-icon-user h3 a:before {
+  background-position: -352px -308px;
+}
+.control-r-icon-user h3 a:hover:before {
+  background-position: -396px -308px;
+}
+.control-r-icon-map h3 a:before {
+  background-position: -352px -352px;
+}
+.control-r-icon-map h3 a:hover:before {
+  background-position: -396px -352px;
+}

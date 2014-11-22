@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Control-R: software for smart homes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	    <script src='js/vendor/require.js' data-main='js/01_main'></script>
+    </head>
+    <body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div id='cr-spinner'>&nbsp;</div>
+
+		<div class='hidden' id='cr-stuff'>
+			<div id='cr-page-template' data-theme='b' data-role='page' class='invisible'>
+				<div data-role='header' data-position='fixed'>
+					<h1>&nbsp;</h1>
+					<a href="#panel-left"  data-iconpos="notext"></a>
+					<a href="#panel-right" data-iconpos="notext"></a>
+				</div>
+				<div data-role='cr-page-content'>&nbsp;</div>
+				<div data-role="panel" data-position-fixed="true" data-display="overlay" id="panel-left">&nbsp;</div>
+				<div data-role="panel" data-position-fixed="true" data-display="overlay" id="panel-right" data-position='right'>&nbsp;</div>
+			</div>	
+		</div>	
+
+    </body>
+</html>
