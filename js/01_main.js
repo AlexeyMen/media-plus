@@ -10,6 +10,8 @@ requirejs.config({
     mobile_css:    '22_mobile_css',
     media:         '../media-plus/js/main',
     audio:         '../media-plus/js/audio',
+    cameras:       '../media-plus/js/cameras',
+    conditioners:  '../media-plus/js/conditioners',
     mobile:        '24_mobile',
 	jquery:        'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min',
     jquery_ui:     'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min',

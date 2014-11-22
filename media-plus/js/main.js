@@ -36,12 +36,8 @@ function setClick(link, s, center){
   switch(s){	
 	  case 'conditioners':
 	  case 'cameras':
-		  $(link).click(function(){
-		    $(center).css('background-image', 'url("media-plus/img/bg-' + s + '.png")')
-		  })
-		  break
 	  case 'audio':
-		  $(link).click(function(){require('audio')(center)})  
+		  $(link).click(function(){require(s)(center)})  
 		  break
   }
 }

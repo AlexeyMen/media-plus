@@ -10,7 +10,7 @@ define(function(){
 				})
 			})
 			var gauge = $(center).find('.cr-audio-gauge div')[0]
-			setGauge(gauge)
+			setGauge(gauge, .01)
 		})  
 	}
 })
@@ -24,13 +24,13 @@ function getAction(el){
   }
 }
 
-function setGauge(el){
+function setGauge(el, val){
   $(el).BarGauge({
 	  backgroundColor: "#3d3d3d",           // Color of the Progress / Gauge Bar 
 	  color: "#00fff2",     // Background color of Progress / Gauge Bar
 	  width: "368px",      // Default width of Bar (Original Graphic Size of faceplate)
 	  height: "58px",      // Default height of Bar
-	  value: 0.5,             // Value of Bar Gauge (Current Position)
+	  value: val,             // Value of Bar Gauge (Current Position)
 	  goal: 1.00,          // Goal of Bar Gauge (Maximum Position)
 	  //title: "Eric Clapton. Rockin' Chair",       // Default Title of Bar Gauge
 	  title: "",       // Default Title of Bar Gauge
@@ -46,4 +46,5 @@ function setGauge(el){
 	  thouSeparator: ',',      // Default Thousands seperator I.E. 1,000 or 1.000
 	  decSeparator: '.'        // Default Decimal Separator I.E. 0.001 or 0,001
   })
+  $(el).find('.barGauge_title').css('visibitity', 'hidden')
 }
