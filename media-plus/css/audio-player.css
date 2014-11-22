@@ -96,9 +96,7 @@
 .cr-audio-cover,
 .cr-audio-playlist {
   position: absolute;
-  width: 315px;
-  height: 335px;
-  right: 24px;
+  right: 10px;
   background-color: #3d3d3d;
   color: #00fff2;
   scroll: vertical;
@@ -107,33 +105,37 @@
   border-radius: 6px;
 }
 .cr-audio-cover {
-  width: 150px;
-  height: 150px;
-  bottom: 22px;
+  width: 90px;
+  height: 90px;
+  bottom: 7px;
+  padding: 1px;
+}
+.cr-audio-cover img {
+  margin: auto;
+  width: 88px;
+  height: 88px;
 }
 .cr-audio-playlist {
-  bottom: 234px;
+  bottom: 128px;
   overflow-y: scroll;
+  width: 315px;
+  height: 394px;
 }
 .cr-audio-time,
 .cr-audio-composition {
   position: absolute;
   background-color: #3d3d3d;
   color: #00fff2;
-  bottom: 120px;
   font-family: sans-serif;
   font-size: 16pt;
   text-decoration: small-caps;
 }
 .cr-audio-composition {
-  left: 42px;
+  left: 56px;
+  bottom: 72px;
 }
 .cr-audio-time {
-  right: 242px;
+  right: 209px;
   text-align: right;
-}
-.cr-audio-cover img {
-  margin: auto;
-  width: 150px;
-  height: 150px;
+  bottom: 30px;
 }
