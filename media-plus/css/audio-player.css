@@ -140,6 +140,9 @@
   bottom: 30px;
 }
 .cr-audio-gauge {
+  position: absolute;
+  width: 368px;
+  height: 58px;
   right: 209px;
   bottom: 14px;
 }
