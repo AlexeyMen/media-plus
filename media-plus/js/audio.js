@@ -10,7 +10,7 @@ define(function(){
 				})
 			})
 			var gauge = $(center).find('.cr-audio-gauge div')[0]
-			//setGauge(gauge)
+			setGauge(gauge)
 		})  
 	}
 })
