@@ -29,7 +29,7 @@ function setGauge(el){
 	  backgroundColor: "#3d3d3d",           // Color of the Progress / Gauge Bar 
 	  color: "#00fff2",     // Background color of Progress / Gauge Bar
 	  width: "368px",      // Default width of Bar (Original Graphic Size of faceplate)
-	  height: "72px",      // Default height of Bar
+	  height: "58px",      // Default height of Bar
 	  value: 0.5,             // Value of Bar Gauge (Current Position)
 	  goal: 1.00,          // Goal of Bar Gauge (Maximum Position)
 	  //title: "Eric Clapton. Rockin' Chair",       // Default Title of Bar Gauge
