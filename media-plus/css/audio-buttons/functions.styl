@@ -1,0 +1,16 @@
+buttW = 32
+buttH = 32
+
+$cr-audio-button
+	position absolute
+	content "\00A0"
+	width (buttW)px 
+	height (buttH)px 
+	margin 0
+	/* background red */
+	cursor pointer
+
+audio-button(x, y)
+	@extends $cr-audio-button
+	left (x)px
+	bottom (y)px

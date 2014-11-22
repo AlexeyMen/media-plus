@@ -45,9 +45,22 @@ function setClick(link, s, center){
 		    $(center).css('background-image', 'none')
 			requireCss('media-plus/css/audio-player.css')  
 			$(center).load('media-plus/audio.html', function(){
-			  alert('audio')
+				$(center).find('[class^=cr-audio-button]').each(function(){
+				   $(this).click(function(){
+				     alert(getAction(this))
+				   })
+				})
 			})  
 		  })
 		  break
+  }
+}
+
+function getAction(el){
+  var classes = $(el).attr('class').split(/\s+/)
+  for(var i in classes){
+	var s = classes[i]  
+    if(/-button$/.test(s)) continue
+    return s.match(/[a-z0-9]+$/)[0]		
   }
 }

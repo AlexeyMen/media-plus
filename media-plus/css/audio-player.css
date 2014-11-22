@@ -19,11 +19,11 @@
   width: 32px;
   height: 32px;
   margin: 0;
-  background: #f00;
+/* background red */
   cursor: pointer;
 }
 .cr-audio-button-power {
-  left: 272px;
+  left: 372px;
   bottom: 453px;
 }
 .cr-audio-button-play {
@@ -92,4 +92,48 @@
   background-image: url("../img/bg-audio.png");
   background-position: center bottom;
   background-repeat: no-repeat;
+}
+.cr-audio-cover,
+.cr-audio-playlist {
+  position: absolute;
+  width: 315px;
+  height: 335px;
+  right: 24px;
+  background-color: #3d3d3d;
+  color: #00fff2;
+  scroll: vertical;
+  padding: 5px;
+  border: 1px solid #00fff3;
+  border-radius: 6px;
+}
+.cr-audio-cover {
+  width: 150px;
+  height: 150px;
+  bottom: 22px;
+}
+.cr-audio-playlist {
+  bottom: 234px;
+  overflow-y: scroll;
+}
+.cr-audio-time,
+.cr-audio-composition {
+  position: absolute;
+  background-color: #3d3d3d;
+  color: #00fff2;
+  bottom: 120px;
+  font-family: sans-serif;
+  font-size: 16pt;
+  text-decoration: small-caps;
+}
+.cr-audio-composition {
+  left: 42px;
+}
+.cr-audio-time {
+  right: 242px;
+  text-align: right;
+}
+.cr-audio-cover img {
+  margin: auto;
+  width: 150px;
+  height: 150px;
 }
