@@ -25,7 +25,7 @@ function getAction(el){
 }
 
 function setGauge(el){
-  $('.control-r-media-center-bar-gauge').BarGauge({
+  $(el).BarGauge({
 	  backgroundColor: "#3d3d3d",           // Color of the Progress / Gauge Bar 
 	  color: "#00fff2",     // Background color of Progress / Gauge Bar
 	  width: "368px",      // Default width of Bar (Original Graphic Size of faceplate)
