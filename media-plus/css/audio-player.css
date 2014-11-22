@@ -23,68 +23,68 @@
   cursor: pointer;
 }
 .cr-audio-button-power {
-  left: 30px;
-  bottom: 531px;
+  left: 37px;
+  bottom: 538px;
 }
 .cr-audio-button-play {
-  left: 47px;
-  bottom: 151px;
+  left: 417px;
+  bottom: 521px;
 }
 .cr-audio-button-pause {
-  left: 47px;
-  bottom: 87px;
+  left: 481px;
+  bottom: 521px;
 }
 .cr-audio-button-stop {
-  left: 47px;
-  bottom: 24px;
+  left: 544px;
+  bottom: 521px;
 }
 .cr-audio-button-ok {
-  left: 256px;
-  bottom: 84px;
+  left: 484px;
+  bottom: 312px;
 }
 .cr-audio-button-up {
-  left: 198px;
-  bottom: 84px;
+  left: 484px;
+  bottom: 370px;
 }
 .cr-audio-button-down {
-  left: 312px;
-  bottom: 84px;
+  left: 484px;
+  bottom: 256px;
 }
 .cr-audio-button-right {
-  left: 256px;
-  bottom: 24px;
+  left: 544px;
+  bottom: 312px;
 }
 .cr-audio-button-left {
-  left: 256px;
-  bottom: 149px;
+  left: 419px;
+  bottom: 312px;
 }
 .cr-audio-button-mute {
-  left: 262px;
-  bottom: 398px;
+  left: 170px;
+  bottom: 306px;
 }
 .cr-audio-button-volumeup {
-  left: 205px;
-  bottom: 475px;
+  left: 93px;
+  bottom: 363px;
 }
 .cr-audio-button-volumedown {
-  left: 320px;
-  bottom: 475px;
+  left: 93px;
+  bottom: 248px;
 }
 .cr-audio-button-forward {
-  left: 117px;
-  bottom: 21px;
+  left: 547px;
+  bottom: 451px;
 }
 .cr-audio-button-previous {
-  left: 117px;
-  bottom: 215px;
+  left: 353px;
+  bottom: 451px;
 }
 .cr-audio-button-back {
-  left: 117px;
-  bottom: 153px;
+  left: 415px;
+  bottom: 451px;
 }
 .cr-audio-button-next {
-  left: 117px;
-  bottom: 83px;
+  left: 485px;
+  bottom: 451px;
 }
 .cr-media-audio {
   width: 100%;
