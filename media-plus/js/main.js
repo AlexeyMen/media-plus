@@ -41,26 +41,7 @@ function setClick(link, s, center){
 		  })
 		  break
 	  case 'audio':
-		  $(link).click(function(){
-		    $(center).css('background-image', 'none')
-			requireCss('media-plus/css/audio-player.css')  
-			$(center).load('media-plus/audio.html', function(){
-				$(center).find('[class^=cr-audio-button]').each(function(){
-				   $(this).click(function(){
-				     alert(getAction(this))
-				   })
-				})
-			})  
-		  })
+		  $(link).click(function(){require('audio')(center)})  
 		  break
-  }
-}
-
-function getAction(el){
-  var classes = $(el).attr('class').split(/\s+/)
-  for(var i in classes){
-	var s = classes[i]  
-    if(/-button$/.test(s)) continue
-    return s.match(/[a-z0-9]+$/)[0]		
   }
 }

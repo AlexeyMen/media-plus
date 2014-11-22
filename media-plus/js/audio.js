@@ -2,6 +2,7 @@ define(function(){
 	return function(center){
 		$(center).css('background-image', 'none')
 		requireCss('media-plus/css/audio-player.css')  
+		requireCss('css/vendor/jquery.BarGauge.css')
 		$(center).load('media-plus/audio.html', function(){
 			$(center).find('[class^=cr-audio-button]').each(function(){
 				$(this).click(function(){
