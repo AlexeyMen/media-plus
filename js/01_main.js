@@ -22,7 +22,7 @@ requirejs.config({
   shim: {
     mobile:        {deps: ['mobile_css', 'jquery_mobile']},
     pages:         {deps: ['jquery', 'css']},
-    media:         {deps: ['pages', 'audio']},
+    media:         {deps: ['pages', 'audio', 'conditioners', 'cameras']},
     audio:         {deps: ['gauge']},
   }
 })
