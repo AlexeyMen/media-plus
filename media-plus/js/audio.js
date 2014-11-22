@@ -9,8 +9,8 @@ define(function(){
 					alert(getAction(this))
 				})
 			})
-			var gauge = $(center).find('.cr-audio-gauge')[0]
-			setGauge(gauge)
+			var gauge = $(center).find('.cr-audio-gauge div')[0]
+			//setGauge(gauge)
 		})  
 	}
 })
