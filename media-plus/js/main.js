@@ -44,7 +44,7 @@ function setClick(link, s, center){
 		  $(link).click(function(){
 		    $(center).css('background-image', 'none')
 			requireCss('media-plus/css/audio-player.css')  
-			$(center).load('media-center/audio.html', function(){
+			$(center).load('media-plus/audio.html', function(){
 			  alert('audio')
 			})  
 		  })
