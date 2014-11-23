@@ -59,4 +59,5 @@ for jquery.BarGauge.js
 	padding-right:5px;
 	font-weight:bold;
 	z-index:1003;
+	display: none;
 }

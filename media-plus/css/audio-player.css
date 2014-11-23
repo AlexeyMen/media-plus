@@ -10,10 +10,11 @@
 .cr-audio-button-mute,
 .cr-audio-button-volumeup,
 .cr-audio-button-volumedown,
-.cr-audio-button-forward,
 .cr-audio-button-previous,
-.cr-audio-button-back,
-.cr-audio-button-next {
+.cr-audio-button-rewind,
+.cr-audio-button-forward,
+.cr-audio-button-next,
+.cr-audio-button-back {
   position: absolute;
   content: "\00A0";
   width: 32px;
@@ -70,20 +71,24 @@
   left: 80px;
   bottom: 180px;
 }
-.cr-audio-button-forward {
-  left: 566px;
-  bottom: 383px;
-}
 .cr-audio-button-previous {
   left: 372px;
   bottom: 383px;
 }
-.cr-audio-button-back {
+.cr-audio-button-rewind {
   left: 434px;
   bottom: 383px;
 }
-.cr-audio-button-next {
+.cr-audio-button-forward {
   left: 504px;
+  bottom: 383px;
+}
+.cr-audio-button-next {
+  left: 566px;
+  bottom: 383px;
+}
+.cr-audio-button-back {
+  left: 636px;
   bottom: 383px;
 }
 .cr-media-audio {
@@ -133,11 +138,16 @@
 .cr-audio-composition {
   left: 56px;
   bottom: 75px;
+  color: #f8bfa9;
+  visibility: hidden;
+}
+.cr-audio-current {
+  color: #f8bfa9;
 }
 .cr-audio-time {
   right: 180px;
   text-align: right;
-  bottom: 38px;
+  bottom: 41px;
 }
 .cr-audio-gauge {
   position: absolute;

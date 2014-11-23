@@ -9,7 +9,7 @@ if(window.WebSocket && !isOpen) {
   connection.onmessage = function (message) {
     var json = JSON.parse(message.data)
     var target = json.target		
-	if(!target || !socketBoxi[target] || typeof socketBox[target] !== 'function') return
+	if(!target || !socketBox[target] || typeof socketBox[target] !== 'function') return
 	socketBox[target](json)	
   }
 }

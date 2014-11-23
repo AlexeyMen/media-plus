@@ -6,14 +6,82 @@ define(function(){
 		$(center).load('media-plus/audio.html', function(){
 			$(center).find('[class^=cr-audio-button]').each(function(){
 				$(this).click(function(){
-					alert(getAction(this))
+				  var act = getAction(this) 	
+				  $.ajax({
+					type: 'GET',
+					url: '/xbmc/control/' + act,
+					dataType: 'json',
+					contentType: 'application/json',
+					success: function(dat){}		
+				  })
 				})
 			})
 			var gauge = $(center).find('.cr-audio-gauge div')[0]
 			setGauge(gauge, .01)
+			var barGauge = $(gauge).find('.barGauge_bar')[0]
+			var socketBox = require('socketbox')
+			var ul = $('.cr-audio-playlist ul')	
+			var currentPosition = -1
+			socketBox['gauge'] = function(json){
+				var pos = parseInt(json.result.position)	
+			    //if(pos != currentPosition) $(ul).find(':nth-child(' + (pos + 1) + ') a').each(function(){
+					$(this).css('color', '#F8BFA9') //.addClass('cr-audio-current')
+				//})		
+				currentPosition = pos
+				var totalTime = json.result.totaltime
+				var elapsedTime = json.result.time
+				var timeRatio = getTimeRatio(elapsedTime, totalTime)
+				$(barGauge).css('width', timeRatio + '%')
+				var etime = timeFormat(elapsedTime)	
+				var ttime = timeFormat(totalTime)	
+				$('.cr-audio-time').text(etime + '/' + ttime)
+			}
+			socketBox['playlist'] = function(json){
+				$(ul).empty()  
+				var pl = json.items
+				for(i in pl) preparePlaylistLink(i, ul, pl)
+			}
+			socketBox['composition'] = function(json){
+				var fields = ['album', 'artist', 'title']
+				for(i in fields) $('.cr-audio-' + fields[i]).text(json[fields[i]])
+				$('.cr-audio-composition').css('visibility', 'visible')
+			    $('.cr-audio-cover img').attr('src', '/xbmc/thumbnail?' + Math.random())	
+			    $(ul).find('li a').each(function(){$(this).removeClass('cr-audio-current')})		
+			}
+			$.get('/xbmc/playlist', function(){
+				$.get('/xbmc/composition')
+			})
+			$('.cr-audio-cover img').attr('src', '/xbmc/thumbnail?' + Math.random())	
+			$('.cr-audio-composition').css('visibility', 'visible')
 		})  
 	}
 })
+
+function preparePlaylistLink(i, ul, pl){
+	var li = $('<li/>').appendTo(ul)
+	var a  = $('<a href="#">' + pl[i] + '</a>').appendTo(li)
+	$(a).click(function(){$.get('/xbmc/play/' + i)})
+}
+
+function getMilliseconds(obj){
+  var mins = parseInt(obj.minutes)
+  var secs = parseInt(obj.seconds)
+  return (mins * 60 +  + secs) * 1000
+}
+
+function timeFormat(obj){
+  var mins = parseInt(obj.minutes)
+  var secs = parseInt(obj.seconds)
+  mins = mins < 10 ? '0' + mins : mins
+  secs = secs < 10 ? '0' + secs : secs
+  return mins + ':' + secs
+}
+
+function getTimeRatio(t, tt){
+  var tr = (parseInt(t.minutes) * 60 + parseInt(t.seconds)) / (parseInt(tt.minutes) * 60 + parseInt(tt.seconds))
+  tr = tr < .03 ? .03 : tr	  
+  return tr * 100	  
+}
 
 function getAction(el){
   var classes = $(el).attr('class').split(/\s+/)
@@ -46,5 +114,4 @@ function setGauge(el, val){
 	  thouSeparator: ',',      // Default Thousands seperator I.E. 1,000 or 1.000
 	  decSeparator: '.'        // Default Decimal Separator I.E. 0.001 or 0,001
   })
-  $(el).find('.barGauge_title').css('visibitity', 'hidden')
 }

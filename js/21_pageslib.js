@@ -24,6 +24,7 @@ function setRefs(page, i, obj){
   })
   if(obj.prepareWidgets) obj.prepareWidgets(page)
   if(obj.title){
+	$(page).attr('data-i18n-title', obj.title)
     $(page).find('[data-role=header]').each(function(){
 	  $(this).attr('data-i18n-title', obj.title)
 	})

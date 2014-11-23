@@ -10,8 +10,9 @@ requirejs.config({
     css:           '20_css',
     pageslib:      '21_pageslib',
     pages:         '22_pages',
-    mobile_css:    '90_mobile_css',
-    mobile:        '91_mobile',
+    i18n:          '90_i18n',
+    mobile_css:    '91_mobile_css',
+    mobile:        '92_mobile',
     media:         '../media-plus/js/main',
     audio:         '../media-plus/js/audio',
     cameras:       '../media-plus/js/cameras',
@@ -23,7 +24,7 @@ requirejs.config({
   },
 
   shim: {
-    mobile:        {deps: ['mobile_css', 'jquery_mobile']},
+    mobile:        {deps: ['i18n', 'mobile_css', 'jquery_mobile']},
     pageslib:      {deps: ['jquery', 'css']},
     media:         {deps: ['pageslib', 'pages', 'audio', 'conditioners', 'cameras', 'socketbox']},
     audio:         {deps: ['gauge']},
