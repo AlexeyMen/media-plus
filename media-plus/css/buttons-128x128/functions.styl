@@ -1,0 +1,26 @@
+stepX = 128
+stepY = 128
+
+$cr-icon
+	content "\00A0"
+	width (stepX)px 
+	height (stepY)px 
+	margin 0
+	padding 0
+	border 0
+	background-image: url('../img/buttons-128x128.png')
+	cursor: pointer
+	display: inline-block
+	float: left
+	position absolute
+
+icon-pos(x, y, v)
+	@extends $cr-icon
+	background-position (-1 * x * stepX - v)px (-1 * y * stepY)px
+
+icon-out(x, y)
+	icon-pos(x * 2, y, 0)
+
+icon-hover(x, y)
+	icon-pos(x * 2, y, stepX)
+	

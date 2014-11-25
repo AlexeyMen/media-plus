@@ -2,94 +2,138 @@
 .cr-audio-button-play,
 .cr-audio-button-pause,
 .cr-audio-button-stop,
-.cr-audio-button-ok,
-.cr-audio-button-up,
-.cr-audio-button-down,
-.cr-audio-button-right,
-.cr-audio-button-left,
-.cr-audio-button-mute,
-.cr-audio-button-volumeup,
-.cr-audio-button-volumedown,
 .cr-audio-button-previous,
 .cr-audio-button-rewind,
 .cr-audio-button-forward,
 .cr-audio-button-next,
-.cr-audio-button-back {
+.cr-audio-button-back,
+.cr-audio-button-up,
+.cr-audio-button-down,
+.cr-audio-button-left,
+.cr-audio-button-ok,
+.cr-audio-button-right,
+.cr-audio-button-mute,
+.cr-audio-button-volumeup,
+.cr-audio-button-volumedown {
   position: absolute;
   content: "\00A0";
-  width: 32px;
-  height: 32px;
+  width: 60px;
+  height: 60px;
   margin: 0;
 /* background red */
   cursor: pointer;
 }
 .cr-audio-button-power {
-  left: 372px;
-  bottom: 453px;
+  left: 349px;
+  bottom: 444px;
 }
 .cr-audio-button-play {
-  left: 436px;
-  bottom: 453px;
+  left: 419px;
+  bottom: 444px;
 }
 .cr-audio-button-pause {
-  left: 500px;
-  bottom: 453px;
+  left: 487px;
+  bottom: 444px;
 }
 .cr-audio-button-stop {
-  left: 563px;
-  bottom: 453px;
-}
-.cr-audio-button-ok {
-  left: 503px;
-  bottom: 244px;
-}
-.cr-audio-button-up {
-  left: 503px;
-  bottom: 302px;
-}
-.cr-audio-button-down {
-  left: 503px;
-  bottom: 188px;
-}
-.cr-audio-button-right {
-  left: 563px;
-  bottom: 244px;
-}
-.cr-audio-button-left {
-  left: 438px;
-  bottom: 244px;
-}
-.cr-audio-button-mute {
-  left: 157px;
-  bottom: 238px;
-}
-.cr-audio-button-volumeup {
-  left: 80px;
-  bottom: 295px;
-}
-.cr-audio-button-volumedown {
-  left: 80px;
-  bottom: 180px;
+  left: 554px;
+  bottom: 444px;
 }
 .cr-audio-button-previous {
-  left: 372px;
-  bottom: 383px;
+  left: 352px;
+  bottom: 371px;
 }
 .cr-audio-button-rewind {
-  left: 434px;
-  bottom: 383px;
+  left: 418px;
+  bottom: 371px;
 }
 .cr-audio-button-forward {
-  left: 504px;
-  bottom: 383px;
+  left: 490px;
+  bottom: 371px;
 }
 .cr-audio-button-next {
-  left: 566px;
-  bottom: 383px;
+  left: 556px;
+  bottom: 371px;
 }
 .cr-audio-button-back {
-  left: 636px;
-  bottom: 383px;
+  left: 621px;
+  bottom: 371px;
+}
+.cr-audio-button-up {
+  left: 484px;
+  bottom: 285px;
+}
+.cr-audio-button-down {
+  left: 484px;
+  bottom: 165px;
+}
+.cr-audio-button-left {
+  left: 424px;
+  bottom: 225px;
+}
+.cr-audio-button-ok {
+  left: 484px;
+  bottom: 225px;
+}
+.cr-audio-button-right {
+  left: 544px;
+  bottom: 225px;
+}
+.cr-audio-button-mute {
+  left: 122px;
+  bottom: 208px;
+}
+.cr-audio-button-volumeup {
+  left: 48px;
+  bottom: 260px;
+}
+.cr-audio-button-volumedown {
+  left: 48px;
+  bottom: 153px;
+}
+.cr-icones-collection-movie,
+.cr-icones-collection-movie:hover,
+.cr-icones-collection-photo,
+.cr-icones-collection-photo:hover,
+.cr-icones-collection-video,
+.cr-icones-collection-video:hover,
+.cr-icones-collection-audio,
+.cr-icones-collection-audio:hover {
+  content: "\00A0";
+  width: 128px;
+  height: 128px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url("../img/buttons-128x128.png");
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  position: absolute;
+}
+.cr-icones-collection-movie {
+  background-position: 0px 0px;
+}
+.cr-icones-collection-movie:hover {
+  background-position: -128px 0px;
+}
+.cr-icones-collection-photo {
+  background-position: 0px -128px;
+}
+.cr-icones-collection-photo:hover {
+  background-position: -128px -128px;
+}
+.cr-icones-collection-video {
+  background-position: 0px -256px;
+}
+.cr-icones-collection-video:hover {
+  background-position: -128px -256px;
+}
+.cr-icones-collection-audio {
+  background-position: 0px -384px;
+}
+.cr-icones-collection-audio:hover {
+  background-position: -128px -384px;
 }
 .cr-media-audio {
   width: 100%;
@@ -156,14 +200,31 @@
   right: 368px;
   bottom: 18px;
 }
-.cr-icones-my-audio,
-.cr-icones-my-video {
+.cr-audio-volume {
   position: absolute;
+  width: 140px;
+  height: 80px;
+  left: 195px;
+  bottom: 204px;
+  content: "\00A0";
+  background-image: url("../img/volume.png");
+}
+.cr-icones-collection-movie,
+.cr-icones-collection-video {
   bottom: 430px;
 }
-.cr-icones-my-audio {
-  left: 32px;
+.cr-icones-collection-audio,
+.cr-icones-collection-photo {
+  bottom: 320px;
 }
-.cr-icones-my-video {
-  left: 186px;
+.cr-icones-collection-movie,
+.cr-icones-collection-audio {
+  left: 10px;
+}
+.cr-icones-collection-video,
+.cr-icones-collection-photo {
+  left: 150px;
+}
+.cr-audio-button:hover {
+  background-image: url("../img/button-60x60-shadow.png");
 }

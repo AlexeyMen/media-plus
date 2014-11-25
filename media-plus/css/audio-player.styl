@@ -1,4 +1,5 @@
-@import 'audio-buttons'
+@import 'buttons-audio'
+@import 'buttons-128x128'
 
 .cr-media-audio
 	width: 100%
@@ -65,15 +66,30 @@
 	right: 368px;
 	bottom 18px
 
-.cr-icones-my-audio,
-.cr-icones-my-video
-	position absolute
+.cr-audio-volume
+	position: absolute
+	width: 140px
+	height 80px
+	left: 195px;
+	bottom 204px
+	content "\00A0"
+	background-image url(../img/volume.png)
+
+.cr-icones-collection-movie,
+.cr-icones-collection-video
 	bottom: 430px
 
-.cr-icones-my-audio
-	left: 32px
+.cr-icones-collection-audio,
+.cr-icones-collection-photo
+	bottom: 320px
 
-.cr-icones-my-video
-	left: 186px
+.cr-icones-collection-movie,
+.cr-icones-collection-audio
+	left 10px
 
+.cr-icones-collection-video,
+.cr-icones-collection-photo
+	left 150px
 
+.cr-audio-button:hover
+	background-image url(../img/button-60x60-shadow.png)
