@@ -48,6 +48,42 @@ define(function(){
 			    $('.cr-audio-cover img').attr('src', '/xbmc/thumbnail?' + Math.random())	
 			    $(ul).find('li a').each(function(){$(this).removeClass('cr-audio-current')})		
 			}
+			socketBox['volume'] = function(json){
+				var vol = parseInt(json.result.volume)
+				vol = Math.round(Math.floor(vol - 1))
+				switch(vol){
+					case 30:
+						vol = 37
+						break
+					case 40:
+						vol = 62
+						break
+					case 50:
+						vol = 77
+						break
+					case 60:
+						vol = 90
+						break
+					case 70:
+						vol = 102
+						break
+					case 80:
+						vol = 116
+						break
+					case 90:
+						vol = 140
+						break
+					default:
+						vol = 23
+				}
+				$('.cr-audio-volume').width(vol)
+			}
+			socketBox['reset'] = function(json){
+				$(ul).empty()
+				$(barGauge).css('width', 0)
+				$('.cr-audio-composition').css('visibility', 'hidden')
+			}
+			$.get('/xbmc/volume')
 			$.get('/xbmc/playlist', function(){
 				$.get('/xbmc/composition')
 			})
