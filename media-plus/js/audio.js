@@ -39,38 +39,40 @@ define(function(){
 			socketBox['playlist'] = function(json){
 				$(ul).empty()  
 				var pl = json.items
-				for(i in pl) preparePlaylistLink(i, ul, pl)
+				for(i in pl) preparePlaylistLink(ul, pl, i)
 			}
 			socketBox['composition'] = function(json){
 				var fields = ['album', 'artist', 'title']
 				for(i in fields) $('.cr-audio-' + fields[i]).text(json[fields[i]])
+				$('.cr-audio-dot1').css('display', !json[fields.album] ? 'none' : 'inline')	
+				$('.cr-audio-dot2').css('display', !json[fields.artist] ? 'none' : 'inline')	
 				$('.cr-audio-composition').css('visibility', 'visible')
 			    $('.cr-audio-cover img').attr('src', '/xbmc/thumbnail?' + Math.random())	
 			    $(ul).find('li a').each(function(){$(this).removeClass('cr-audio-current')})		
 			}
 			socketBox['volume'] = function(json){
 				var vol = parseInt(json.result.volume)
-				vol = Math.round(Math.floor(vol - 1))
+				vol = Math.round(Math.floor((vol - 1)/10))
 				switch(vol){
-					case 30:
+					case 3:
 						vol = 37
 						break
-					case 40:
+					case 4:
 						vol = 62
 						break
-					case 50:
+					case 5:
 						vol = 77
 						break
-					case 60:
+					case 6:
 						vol = 90
 						break
-					case 70:
+					case 7:
 						vol = 102
 						break
-					case 80:
+					case 8:
 						vol = 116
 						break
-					case 90:
+					case 9:
 						vol = 140
 						break
 					default:
@@ -82,20 +84,20 @@ define(function(){
 				$(ul).empty()
 				$(barGauge).css('width', 0)
 				$('.cr-audio-composition').css('visibility', 'hidden')
+				$('.cr-audio-time').text('00:00/00:00')
 			}
 			$.get('/xbmc/volume')
 			$.get('/xbmc/playlist', function(){
 				$.get('/xbmc/composition')
 			})
 			$('.cr-audio-cover img').attr('src', '/xbmc/thumbnail?' + Math.random())	
-			$('.cr-audio-composition').css('visibility', 'visible')
 		})  
 	}
 })
 
-function preparePlaylistLink(i, ul, pl){
+function preparePlaylistLink(ul, pl, i){
 	var li = $('<li/>').appendTo(ul)
-	var a  = $('<a href="#">' + pl[i] + '</a>').appendTo(li)
+	var a  = $('<a href="#">' + pl[i].title + '</a>').appendTo(li)
 	$(a).click(function(){$.get('/xbmc/play/' + i)})
 }
 
