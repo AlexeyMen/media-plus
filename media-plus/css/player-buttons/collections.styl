@@ -1,0 +1,81 @@
+stepX = 128
+stepY = 128
+hideY = 25
+spaceY = 5
+buttonHeight = stepY - hideY
+anchorLeft = 10
+anchorBottom = 108
+turquoiseLight = #00fff2
+turquoiseDark  = #00ded4
+
+$cr-icon
+	content "\00A0"
+	width (stepX)px 
+	height (buttonHeight)px 
+	line-height (buttonHeight)px 
+	margin 0
+	padding 0
+	border 0
+	background-image: url('../img/buttons-128x128.png')
+	cursor: pointer
+	display: inline-block
+	position absolute
+	text-align: center
+	color (turquoiseDark)
+	font-size 10pt
+	left: (anchorLeft)px
+
+$cr-icon-span
+	vertical-align -30px
+
+$cr-icon-span-hover
+	color (turquoiseLight)
+
+icon-pos(x, y)
+	@extends $cr-icon
+	background-position (-1 * x)px (-1 * y * stepY - hideY)px
+
+icon-out(y)
+	icon-pos(0, y)
+	bottom (anchorBottom + (buttonHeight + spaceY) * y)px
+
+icon-hover(y)
+	icon-pos(stepX, y)
+
+.cr-icones-collection-movie
+	icon-out(0, 0)
+
+.cr-icones-collection-photo
+	icon-out(1, 0)
+
+.cr-icones-collection-video
+	icon-out(2, 0)
+
+.cr-icones-collection-audio
+	icon-out(3, 0)
+
+.cr-icones-collection-movie:hover
+	icon-hover(0, 0)
+
+.cr-icones-collection-photo:hover
+	icon-hover(1, 0)
+
+.cr-icones-collection-video:hover
+	icon-hover(2, 0)
+
+.cr-icones-collection-audio:hover
+	icon-hover(3, 0)
+
+.cr-icones-collection-movie span,
+.cr-icones-collection-video span,
+.cr-icones-collection-audio span,
+.cr-icones-collection-photo span
+	@extends $cr-icon-span
+
+.cr-icones-collection-movie span:hover,
+.cr-icones-collection-video span:hover,
+.cr-icones-collection-audio span:hover,
+.cr-icones-collection-photo span:hover
+	@extends $cr-icon-span-hover
+
+

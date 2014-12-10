@@ -1,0 +1,39 @@
+jstStep   = 60
+jstHeight = jstStep * 3
+
+.cr-audio-joystick
+	width (jstStep * 3)px
+	height (jstStep * 3)px
+	background-image url(../img/joystick.svg)
+	position absolute
+
+.cr-audio-joystick-up
+.cr-audio-joystick-left
+.cr-audio-joystick-ok
+.cr-audio-joystick-right
+.cr-audio-joystick-down
+	display inline-block
+	width (jstStep)px
+	height (jstStep)px
+	float left
+	cursor pointer
+
+.cr-audio-joystick-up
+.cr-audio-joystick-down
+	margin 0 1px 0 (jstStep)px
+
+.cr-audio-joystickbg-left
+	background-position 0px (-1 * jstHeight * 1)px
+
+.cr-audio-joystickbg-right
+	background-position 0px (-1 * jstHeight * 2)px
+
+.cr-audio-joystickbg-up
+	background-position 0px (-1 * jstHeight * 3)px
+
+.cr-audio-joystickbg-down
+	background-position 0px (-1 * jstHeight * 4)px
+
+.cr-audio-joystickbg-ok
+	background-position 0px (-1 * jstHeight * 5)px
+

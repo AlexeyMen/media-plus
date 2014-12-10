@@ -1,0 +1,26 @@
+buttW = 80;
+buttH = 80;
+
+.cr-player-button
+	position absolute
+	content '\00A0'
+	width (buttW)px
+	height (buttH)px
+	margin 0
+	background-image url('../img/player-buttons.svg')
+	cursor pointer
+
+player-button-pos(l, b)	
+	@extend .cr-player-button;
+	left (l)px
+	bottom (b)px
+
+player-button-bg(y)
+	background-position 0px (-1 * y * buttH)px
+
+player-button-bg-hover(y)
+	background-position (-1 * buttW)px (-1 * buttH * y)px
+
+player-button-pos-bg(l, b, y)	
+	player-button-pos(l, b)
+	player-button-bg(y)

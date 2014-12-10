@@ -113,11 +113,16 @@ html, body {
 	margin-top: -134px;
 }
 
+.cr-volume-widget,
+.cr-volume-widget-value {
+	width: 154px;
+	height: 84px;
+	background-image: url('../img/volume-widget.png')
+}
 
-
-
-
-
+.cr-volume-widget-value {
+	background-position: 0 -84px;
+}
 
 
 

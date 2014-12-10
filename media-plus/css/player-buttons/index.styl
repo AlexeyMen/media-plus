@@ -1,0 +1,107 @@
+@require functions
+@require joystick
+@require collections
+
+anchLeftMain = 370
+anchBottMain = 453
+stepLeftMain = 70
+stepBottMain = 70
+
+anchLeftMini = 60
+anchBottMini = 0
+stepLeftMini = 60
+
+player-button-pos-bg-mini(l, y)
+	player-button-pos-bg(anchLeftMini + l * stepLeftMini, anchBottMini, y)
+
+player-button-pos-bg-main(l, b, y)
+	player-button-pos-bg(anchLeftMain + l * stepLeftMain, anchBottMain - b * stepBottMain, y)
+
+.cr-audio-joystick
+	left (anchLeftMain + 57)px
+	bottom (anchBottMain - 265)px
+
+.cr-audio-button-power
+	player-button-pos-bg-main(0, 0, 0)
+	&:hover
+		player-button-bg-hover(0)
+
+.cr-audio-button-play
+	player-button-pos-bg-main(1, 0, 1)
+	&:hover
+		player-button-bg-hover(1)
+
+.cr-audio-button-pause
+	player-button-pos-bg-main(2, 0, 2)
+	&:hover
+		player-button-bg-hover(2)
+
+.cr-audio-button-stop
+	player-button-pos-bg-main(3, 0, 3)
+	&:hover
+		player-button-bg-hover(3)
+
+.cr-audio-button-previous
+	player-button-pos-bg-main(0, 1, 4)
+	&:hover
+		player-button-bg-hover(4)
+
+.cr-audio-button-rewind
+	player-button-pos-bg-main(1, 1, 5)
+	&:hover
+		player-button-bg-hover(5)
+
+.cr-audio-button-forward
+	player-button-pos-bg-main(2, 1, 6)
+	&:hover
+		player-button-bg-hover(6)
+
+.cr-audio-button-next
+	player-button-pos-bg-main(3, 1, 7)
+	&:hover
+		player-button-bg-hover(7)
+
+.cr-audio-button-reset
+	player-button-pos-bg(anchLeftMain, 108, 9)
+	&:hover
+		player-button-bg-hover(9)
+
+.cr-audio-button-mute
+	player-button-pos-bg(anchLeftMain - 120, 286, 8)
+	&:hover
+		player-button-bg-hover(8)
+
+.cr-audio-button-menu
+	player-button-pos-bg(anchLeftMain + 170, 108, 14)
+	&:hover
+		player-button-bg-hover(14)
+
+.cr-audio-button-previous-mini
+	player-button-pos-bg-mini(0, 10)
+	&:hover
+		player-button-bg-hover(10)
+
+.cr-audio-button-pause-mini
+	player-button-pos-bg-mini(1, 11)
+	&:hover
+		player-button-bg-hover(11)
+
+.cr-audio-button-stop-mini
+	player-button-pos-bg-mini(2, 12)
+	&:hover
+		player-button-bg-hover(12)
+
+.cr-audio-button-next-mini
+	player-button-pos-bg-mini(3, 13)
+	&:hover
+		player-button-bg-hover(13)
+
+.cr-audio-button-menu
+	width (buttW * 2)px
+	line-height (buttH)px
+	color #00ded4
+	text-align center
+	&:hover
+		background-position (-2 * buttW)px (-14 * buttH)px 
+		color #00fff2
+

@@ -1,95 +1,83 @@
-@import 'buttons-audio'
-@import 'buttons-128x128'
+@import 'player-buttons'
 
 .cr-media-audio
 	width: 100%
-	height 100%
-	background-image url(../img/bg-audio.png)
-	background-position center bottom
-	background-repeat no-repeat
+	height: 100%
+	background-image: url("../img/bg-audio.png")
+	background-position: center bottom
+	background-repeat: no-repeat
 
-.cr-audio-cover,
-.cr-audio-playlist
-	position: absolute;
-	right: 10px;
-	background-color: #3d3d3d;
-	color: #00fff2;
-	scroll: vertical;
-	padding: 5px;
-	border: 1px solid #00fff3;
-	border-radius: 6px;
+.cr-volume-slider-wrap-audio
+	height 350px
+	bottom 144px
+	left 156px
+	position absolute
 
-.cr-audio-cover
-	width: 90px;
-	height: 90px;
-	bottom: 7px;  
-	padding: 1px;
-
-.cr-audio-cover img
-	margin: auto;
-	width: 88px;
-	height: 88px;  
-
-.cr-audio-playlist
-	bottom:   128px;
-	overflow-y: scroll;
-	width:  315px;
-	height: 394px;
-
-.cr-audio-time, 
-.cr-audio-composition
-	position: absolute;
-	background-color: #3d3d3d;
-	color: #00fff2;
-	font-family: sans-serif;
-	font-size: 16pt;
-	text-decoration: small-caps;
-
-.cr-audio-composition
-	left 56px
-	bottom 75px
-	color #f8bfa9
-	visibility hidden
-
-.cr-audio-current
-	color #f8bfa9
-
-.cr-audio-time
-	right: 180px;
-	text-align right
-	bottom 41px
+.cr-volume-scale-wrap-audio
+	bottom 233px
+	left 225px
+	position absolute
 
 .cr-audio-gauge
-	position: absolute
-	width: 368px
-	height 58px
-	right: 368px;
-	bottom 18px
+	position absolute
+	width 368px
+	height 60px
+	right 330px
+	bottom 10px
 
-.cr-audio-volume
-	position: absolute
-	width: 140px
-	height 80px
-	left: 195px;
-	bottom 208px
-	content "\00A0"
-	background-image url(../img/volume.png)
+.cr-audio-time
+.cr-audio-composition
+	position absolute
+	background-color #3d3d3d
+	color #00fff2
+	font-family sans-serif
+	font-size 16pt
+	text-decoration small-caps
 
-.cr-icones-collection-movie,
-.cr-icones-collection-video
-	bottom: 430px
+.cr-audio-composition
+	left 80px
+	bottom 70px
+	color #f8bfa9
+/*	visibility hidden */
 
-.cr-icones-collection-audio,
-.cr-icones-collection-photo
-	bottom: 320px
+.cr-audio-time
+	right 164px
+	text-align right
+	bottom 33px
 
-.cr-icones-collection-movie,
-.cr-icones-collection-audio
-	left 10px
+.cr-audio-cover
+.cr-audio-playlist
+.cr-audio-filelist
+	position absolute
+	right 10px
 
-.cr-icones-collection-video,
-.cr-icones-collection-photo
-	left 150px
+.cr-audio-playlist
+.cr-audio-filelist
+	background-color #3d3d3d
+	color #00fff2
+	scroll vertical
+	padding 5px
+	border 1px solid #00fff2
+	border-radius 6px
+	font-family fantasy
+	width 315px
+	height 394px
+	bottom 124px
 
-.cr-audio-button:hover
-	background-image url(../img/button-60x60-shadow.png)
+.cr-audio-filelist
+	display none
+
+.cr-audio-cover
+	width 90px
+	height 90px
+	bottom 7px
+	padding 1px
+	position absolute
+	border 1px solid #00fff2
+	border-radius 6px
+
+.cr-audio-cover img
+	margin auto
+	width 88px
+	height 88px
+

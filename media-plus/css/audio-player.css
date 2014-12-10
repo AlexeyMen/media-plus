@@ -1,3 +1,4 @@
+.cr-player-button,
 .cr-audio-button-power,
 .cr-audio-button-play,
 .cr-audio-button-pause,
@@ -6,134 +7,254 @@
 .cr-audio-button-rewind,
 .cr-audio-button-forward,
 .cr-audio-button-next,
-.cr-audio-button-back,
-.cr-audio-button-up,
-.cr-audio-button-down,
-.cr-audio-button-left,
-.cr-audio-button-ok,
-.cr-audio-button-right,
+.cr-audio-button-reset,
 .cr-audio-button-mute,
-.cr-audio-button-volumeup,
-.cr-audio-button-volumedown {
+.cr-audio-button-menu,
+.cr-audio-button-previous-mini,
+.cr-audio-button-pause-mini,
+.cr-audio-button-stop-mini,
+.cr-audio-button-next-mini {
   position: absolute;
-  content: "\00A0";
-  width: 60px;
-  height: 60px;
+  content: '\00A0';
+  width: 80px;
+  height: 80px;
   margin: 0;
-/* background red */
+  background-image: url("../img/player-buttons.svg");
   cursor: pointer;
 }
-.cr-audio-button-power {
-  left: 349px;
-  bottom: 444px;
+.cr-audio-joystick {
+  width: 180px;
+  height: 180px;
+  background-image: url("../img/joystick.svg");
+  position: absolute;
 }
-.cr-audio-button-play {
-  left: 419px;
-  bottom: 444px;
+.cr-audio-joystick-up,
+.cr-audio-joystick-left,
+.cr-audio-joystick-ok,
+.cr-audio-joystick-right,
+.cr-audio-joystick-down {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  float: left;
+  cursor: pointer;
 }
-.cr-audio-button-pause {
-  left: 487px;
-  bottom: 444px;
+.cr-audio-joystick-up,
+.cr-audio-joystick-down {
+  margin: 0 1px 0 60px;
 }
-.cr-audio-button-stop {
-  left: 554px;
-  bottom: 444px;
+.cr-audio-joystickbg-left {
+  background-position: 0px -180px;
 }
-.cr-audio-button-previous {
-  left: 352px;
-  bottom: 371px;
+.cr-audio-joystickbg-right {
+  background-position: 0px -360px;
 }
-.cr-audio-button-rewind {
-  left: 418px;
-  bottom: 371px;
+.cr-audio-joystickbg-up {
+  background-position: 0px -540px;
 }
-.cr-audio-button-forward {
-  left: 490px;
-  bottom: 371px;
+.cr-audio-joystickbg-down {
+  background-position: 0px -720px;
 }
-.cr-audio-button-next {
-  left: 556px;
-  bottom: 371px;
-}
-.cr-audio-button-back {
-  left: 621px;
-  bottom: 371px;
-}
-.cr-audio-button-up {
-  left: 484px;
-  bottom: 285px;
-}
-.cr-audio-button-down {
-  left: 484px;
-  bottom: 165px;
-}
-.cr-audio-button-left {
-  left: 424px;
-  bottom: 225px;
-}
-.cr-audio-button-ok {
-  left: 484px;
-  bottom: 225px;
-}
-.cr-audio-button-right {
-  left: 544px;
-  bottom: 225px;
-}
-.cr-audio-button-mute {
-  left: 122px;
-  bottom: 208px;
-}
-.cr-audio-button-volumeup {
-  left: 48px;
-  bottom: 260px;
-}
-.cr-audio-button-volumedown {
-  left: 48px;
-  bottom: 153px;
+.cr-audio-joystickbg-ok {
+  background-position: 0px -900px;
 }
 .cr-icones-collection-movie,
-.cr-icones-collection-movie:hover,
 .cr-icones-collection-photo,
-.cr-icones-collection-photo:hover,
 .cr-icones-collection-video,
-.cr-icones-collection-video:hover,
 .cr-icones-collection-audio,
+.cr-icones-collection-movie:hover,
+.cr-icones-collection-photo:hover,
+.cr-icones-collection-video:hover,
 .cr-icones-collection-audio:hover {
   content: "\00A0";
   width: 128px;
-  height: 128px;
+  height: 103px;
+  line-height: 103px;
   margin: 0;
   padding: 0;
   border: 0;
   background-image: url("../img/buttons-128x128.png");
   cursor: pointer;
   display: inline-block;
-  float: left;
   position: absolute;
+  text-align: center;
+  color: #00ded4;
+  font-size: 10pt;
+  left: 10px;
+}
+.cr-icones-collection-movie span,
+.cr-icones-collection-video span,
+.cr-icones-collection-audio span,
+.cr-icones-collection-photo span {
+  vertical-align: -30px;
+}
+.cr-icones-collection-movie span:hover,
+.cr-icones-collection-video span:hover,
+.cr-icones-collection-audio span:hover,
+.cr-icones-collection-photo span:hover {
+  color: #00fff2;
 }
 .cr-icones-collection-movie {
-  background-position: 0px 0px;
-}
-.cr-icones-collection-movie:hover {
-  background-position: -128px 0px;
+  background-position: 0px -25px;
+  bottom: 108px;
 }
 .cr-icones-collection-photo {
-  background-position: 0px -128px;
-}
-.cr-icones-collection-photo:hover {
-  background-position: -128px -128px;
+  background-position: 0px -153px;
+  bottom: 216px;
 }
 .cr-icones-collection-video {
-  background-position: 0px -256px;
-}
-.cr-icones-collection-video:hover {
-  background-position: -128px -256px;
+  background-position: 0px -281px;
+  bottom: 324px;
 }
 .cr-icones-collection-audio {
-  background-position: 0px -384px;
+  background-position: 0px -409px;
+  bottom: 432px;
+}
+.cr-icones-collection-movie:hover {
+  background-position: -128px -25px;
+}
+.cr-icones-collection-photo:hover {
+  background-position: -128px -153px;
+}
+.cr-icones-collection-video:hover {
+  background-position: -128px -281px;
 }
 .cr-icones-collection-audio:hover {
-  background-position: -128px -384px;
+  background-position: -128px -409px;
+}
+.cr-audio-joystick {
+  left: 427px;
+  bottom: 188px;
+}
+.cr-audio-button-power {
+  left: 370px;
+  bottom: 453px;
+  background-position: 0px 0px;
+}
+.cr-audio-button-power:hover {
+  background-position: -80px 0px;
+}
+.cr-audio-button-play {
+  left: 440px;
+  bottom: 453px;
+  background-position: 0px -80px;
+}
+.cr-audio-button-play:hover {
+  background-position: -80px -80px;
+}
+.cr-audio-button-pause {
+  left: 510px;
+  bottom: 453px;
+  background-position: 0px -160px;
+}
+.cr-audio-button-pause:hover {
+  background-position: -80px -160px;
+}
+.cr-audio-button-stop {
+  left: 580px;
+  bottom: 453px;
+  background-position: 0px -240px;
+}
+.cr-audio-button-stop:hover {
+  background-position: -80px -240px;
+}
+.cr-audio-button-previous {
+  left: 370px;
+  bottom: 383px;
+  background-position: 0px -320px;
+}
+.cr-audio-button-previous:hover {
+  background-position: -80px -320px;
+}
+.cr-audio-button-rewind {
+  left: 440px;
+  bottom: 383px;
+  background-position: 0px -400px;
+}
+.cr-audio-button-rewind:hover {
+  background-position: -80px -400px;
+}
+.cr-audio-button-forward {
+  left: 510px;
+  bottom: 383px;
+  background-position: 0px -480px;
+}
+.cr-audio-button-forward:hover {
+  background-position: -80px -480px;
+}
+.cr-audio-button-next {
+  left: 580px;
+  bottom: 383px;
+  background-position: 0px -560px;
+}
+.cr-audio-button-next:hover {
+  background-position: -80px -560px;
+}
+.cr-audio-button-reset {
+  left: 370px;
+  bottom: 108px;
+  background-position: 0px -720px;
+}
+.cr-audio-button-reset:hover {
+  background-position: -80px -720px;
+}
+.cr-audio-button-mute {
+  left: 250px;
+  bottom: 286px;
+  background-position: 0px -640px;
+}
+.cr-audio-button-mute:hover {
+  background-position: -80px -640px;
+}
+.cr-audio-button-menu {
+  left: 540px;
+  bottom: 108px;
+  background-position: 0px -1120px;
+}
+.cr-audio-button-menu:hover {
+  background-position: -80px -1120px;
+}
+.cr-audio-button-previous-mini {
+  left: 60px;
+  bottom: 0px;
+  background-position: 0px -800px;
+}
+.cr-audio-button-previous-mini:hover {
+  background-position: -80px -800px;
+}
+.cr-audio-button-pause-mini {
+  left: 120px;
+  bottom: 0px;
+  background-position: 0px -880px;
+}
+.cr-audio-button-pause-mini:hover {
+  background-position: -80px -880px;
+}
+.cr-audio-button-stop-mini {
+  left: 180px;
+  bottom: 0px;
+  background-position: 0px -960px;
+}
+.cr-audio-button-stop-mini:hover {
+  background-position: -80px -960px;
+}
+.cr-audio-button-next-mini {
+  left: 240px;
+  bottom: 0px;
+  background-position: 0px -1040px;
+}
+.cr-audio-button-next-mini:hover {
+  background-position: -80px -1040px;
+}
+.cr-audio-button-menu {
+  width: 160px;
+  line-height: 80px;
+  color: #00ded4;
+  text-align: center;
+}
+.cr-audio-button-menu:hover {
+  background-position: -160px -1120px;
+  color: #00fff2;
 }
 .cr-media-audio {
   width: 100%;
@@ -142,33 +263,23 @@
   background-position: center bottom;
   background-repeat: no-repeat;
 }
-.cr-audio-cover,
-.cr-audio-playlist {
+.cr-volume-slider-wrap-audio {
+  height: 350px;
+  bottom: 144px;
+  left: 156px;
   position: absolute;
-  right: 10px;
-  background-color: #3d3d3d;
-  color: #00fff2;
-  scroll: vertical;
-  padding: 5px;
-  border: 1px solid #00fff3;
-  border-radius: 6px;
 }
-.cr-audio-cover {
-  width: 90px;
-  height: 90px;
-  bottom: 7px;
-  padding: 1px;
+.cr-volume-scale-wrap-audio {
+  bottom: 233px;
+  left: 225px;
+  position: absolute;
 }
-.cr-audio-cover img {
-  margin: auto;
-  width: 88px;
-  height: 88px;
-}
-.cr-audio-playlist {
-  bottom: 128px;
-  overflow-y: scroll;
-  width: 315px;
-  height: 394px;
+.cr-audio-gauge {
+  position: absolute;
+  width: 368px;
+  height: 60px;
+  right: 330px;
+  bottom: 10px;
 }
 .cr-audio-time,
 .cr-audio-composition {
@@ -180,51 +291,49 @@
   text-decoration: small-caps;
 }
 .cr-audio-composition {
-  left: 56px;
-  bottom: 75px;
-  color: #f8bfa9;
-  visibility: hidden;
-}
-.cr-audio-current {
+  left: 80px;
+  bottom: 70px;
   color: #f8bfa9;
 }
+/*	visibility hidden */
 .cr-audio-time {
-  right: 180px;
+  right: 164px;
   text-align: right;
-  bottom: 41px;
+  bottom: 33px;
 }
-.cr-audio-gauge {
+.cr-audio-cover,
+.cr-audio-playlist,
+.cr-audio-filelist {
   position: absolute;
-  width: 368px;
-  height: 58px;
-  right: 368px;
-  bottom: 18px;
+  right: 10px;
 }
-.cr-audio-volume {
+.cr-audio-playlist,
+.cr-audio-filelist {
+  background-color: #3d3d3d;
+  color: #00fff2;
+  scroll: vertical;
+  padding: 5px;
+  border: 1px solid #00fff2;
+  border-radius: 6px;
+  font-family: fantasy;
+  width: 315px;
+  height: 394px;
+  bottom: 124px;
+}
+.cr-audio-filelist {
+  display: none;
+}
+.cr-audio-cover {
+  width: 90px;
+  height: 90px;
+  bottom: 7px;
+  padding: 1px;
   position: absolute;
-  width: 140px;
-  height: 80px;
-  left: 195px;
-  bottom: 208px;
-  content: "\00A0";
-  background-image: url("../img/volume.png");
+  border: 1px solid #00fff2;
+  border-radius: 6px;
 }
-.cr-icones-collection-movie,
-.cr-icones-collection-video {
-  bottom: 430px;
-}
-.cr-icones-collection-audio,
-.cr-icones-collection-photo {
-  bottom: 320px;
-}
-.cr-icones-collection-movie,
-.cr-icones-collection-audio {
-  left: 10px;
-}
-.cr-icones-collection-video,
-.cr-icones-collection-photo {
-  left: 150px;
-}
-.cr-audio-button:hover {
-  background-image: url("../img/button-60x60-shadow.png");
+.cr-audio-cover img {
+  margin: auto;
+  width: 88px;
+  height: 88px;
 }

@@ -1,0 +1,53 @@
+.cr-volume-scale-bg,
+.cr-volume-scale-fg,
+.cr-volume-slider-ratio,
+.cr-volume-slider-handle,
+.cr-volume-slider-top,
+.cr-volume-slider-bottom,
+.cr-volume-slider {
+	position: absolute;
+	width: 50px;
+	content: '\00A0';
+}
+.cr-volume-scale-bg,
+.cr-volume-scale-fg{
+	width: 154px;
+	height: 84px;
+	background-image: url(../../img/plugins/volume-scale.png);
+	top: 0;
+	left: 0;
+}
+.cr-volume-scale-fg{
+	background-position: 0 -84px;
+	width: 1px;
+}
+.cr-volume-slider-handle{
+	height: 42px;
+	background-image: url(../../img/plugins/volume-handle.png);
+	bottom: 0;
+	cursor: pointer;
+}
+.cr-volume-slider-bottom{
+	height: 30px;
+	bottom: 0;
+	background-color: #00ded4;
+	background-image: url(../../img/plugins/volume-slider.png);
+	background-position: bottom;
+}
+.cr-volume-slider-top{
+	height: 100%;
+	background-image: url(../../img/plugins/volume-slider.png);
+	background-position: top;
+}
+.cr-volume-slider-ratio{
+	bottom: 0;
+	background-color: #00ded4;
+	height: 1px;
+}
+.cr-volume-slider-wrap{
+	width: 50px;
+}
+.cr-volume-scale-wrap {
+	height: 84px;
+	width: 154px;
+}
